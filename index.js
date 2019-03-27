@@ -2,6 +2,11 @@ var http = require('http');
 var fs = require('fs');
 var server = http.createServer();
 
+function listenServer(){
+    server.listen(9000);
+    console.log('listening...');
+}
+
 server.on('request', function (request, response) {
     if (request.method === 'GET' && request.url === '/') {
         fs.readFile('./index.html', 'utf-8', function (err, data) {
@@ -22,4 +27,4 @@ server.on('request', function (request, response) {
     }
 });
 
-server.listen(9000);
+listenServer();
