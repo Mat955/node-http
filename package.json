@@ -1,0 +1,24 @@
+{
+  "name": "http-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mat955/node-http.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mat955/node-http/issues"
+  },
+  "homepage": "https://github.com/Mat955/node-http#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "stat-mode": "^0.3.0"
+  }
+}
