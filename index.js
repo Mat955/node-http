@@ -24,7 +24,6 @@ server.on('request', function (request, response) {
             response.write(data);
             response.end();
         });
+        listenServer();
     }
 });
-
-listenServer();
