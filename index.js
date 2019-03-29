@@ -2,9 +2,10 @@ var http = require('http');
 var fs = require('fs');
 var server = http.createServer();
 
-function listenServer(){
-    server.listen(9000);
-    console.log('listening...');
+function listenServer() {
+    server.listen(9000, () => {
+        console.log('listening...');
+    });
 }
 
 server.on('request', function (request, response) {
@@ -24,6 +25,6 @@ server.on('request', function (request, response) {
             response.write(data);
             response.end();
         });
-        listenServer();
     }
 });
+listenServer();
